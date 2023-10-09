@@ -102,7 +102,7 @@ const VolumeControl = () => {
     const setVolume = usePlayerStore(state => state.setVolume)
     const previousVolumeRef = useRef(volume)
 
-    const isVolumeSilenced = volume < 0.1
+    const isVolumeSilenced = volume < 0.01
 
     const handleClickVolumen = () => {
         if (isVolumeSilenced) {
